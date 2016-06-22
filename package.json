@@ -1,0 +1,32 @@
+{
+  "name": "learn-postcss",
+  "version": "1.0.0",
+  "description": "Learn PostCSS reading the articles in this repository",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/juanfevasquez/learn-postcss.git"
+  },
+  "author": "juanfevasquez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/juanfevasquez/learn-postcss/issues"
+  },
+  "homepage": "https://github.com/juanfevasquez/learn-postcss#readme",
+  "devDependencies": {
+    "autoprefixer": "^6.3.6",
+    "cssnano": "^3.7.1",
+    "cssnext": "^1.8.4",
+    "gulp": "^3.9.1",
+    "gulp-postcss": "^6.1.1",
+    "gulp-sass": "^2.3.2",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-util": "^3.0.7",
+    "lost": "^6.8.1",
+    "postcss-sprites": "^3.1.2",
+    "stylelint": "^6.7.0"
+  }
+}
