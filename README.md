@@ -4,6 +4,7 @@ Learn PostCSS reading the articles in this repository
 The tools used for the exercises include:
 - Node: obviously
 - Gulp: as our task manager
+- Browser-sync.
 - gulp-postcss: we will run postcss using the gulp plugin because I think using it through Gulp is easier.
 - gulp-sass: This is important.  I'm not using precss because I think sass is pretty awesome and doesn't need to be replaced.  I don't want to use postcss as a css pre-processor.
 
