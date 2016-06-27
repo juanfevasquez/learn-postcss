@@ -21,4 +21,17 @@
     }
 
   }
+
+  &--blueCTA {
+      display: block;
+      width: 60%;
+      padding: 15px 30px;
+      margin: 0 auto;
+      background: color(#00BFFF shade(20%));
+      color: white;
+
+    &:--blueCTA-States {
+      background: color(#00BFFF shade(60%));
+    }
+  }
 }
