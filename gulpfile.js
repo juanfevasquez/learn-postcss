@@ -10,11 +10,20 @@ var autoprefixer = require('autoprefixer');
 var lost = require('lost');
 var sprites = require('postcss-sprites').default;
 var stylelint = require('stylelint');
+var reporter = require('postcss-reporter');
 var fs = require('fs');
 
 gulp.task('sass', function() {
+
   gulp.src('source/scss/main.scss')
   .pipe(maps.init())
+  .pipe(postcss([
+    stylelint(),
+    reporter({
+      clearMessages: true,
+      throwError: true
+      })
+    ]))
   .pipe(sass().on('error', sass.logError))
   .pipe(maps.write())
   .pipe(gulp.dest('build/css'))
