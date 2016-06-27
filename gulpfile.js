@@ -17,6 +17,10 @@ gulp.task('sass', function() {
   .pipe(maps.init())
   .pipe(sass().on('error', sass.logError))
   .pipe(maps.write())
+  .pipe(postcss([
+      cssnano({discardComments: { removeAll: true }})
+    ]))
+  .on('error', gutil.log)
   .pipe(gulp.dest('build/css'))
   .pipe(sync.reload({stream: true}));
 });
