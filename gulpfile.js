@@ -29,7 +29,14 @@ gulp.task('browser-sync', function() {
     });
 });
 
+gulp.task('assets', function() {
+  gulp.src('source/assets/**/*')
+  .pipe(gulp.dest('build/assets'));
+});
+
+
 gulp.task('watch', function() {
+  gulp.watch('source/assets/**/*', ['assets']);
   gulp.watch('source/scss/**/*', ['sass']);
 });
 

@@ -1,0 +1,14 @@
+%Icons {
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+%Icons--hamburger {
+  @extend %Icons;
+  background-image: url('../assets/images/hamburger.png');
+}
+
+%Icons--close {
+  @extend %Icons;
+  background-image: url('../assets/images/close.png');
+}

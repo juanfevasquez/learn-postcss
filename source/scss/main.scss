@@ -1,3 +1,14 @@
 @import 'vendor/Normalize';
+@import 'variables/Fonts';
+@import 'variables/Globals';
 
+@import 'components/Container';
 @import 'components/Header';
+@import 'components/Navigation';
+@import 'components/Btn';
+@import 'placeholders/Icons';
+@import 'components/HeroBanner';
+@import 'components/Card';
+@import 'components/Title';
+@import 'components/Text';
+@import 'components/Footer';

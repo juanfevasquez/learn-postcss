@@ -1,0 +1,26 @@
+.Navigation {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  display: block;
+
+  &-btnContainer {
+    width: 40px;
+    height: 40px;
+  }
+
+  &-menuContainer {
+    position: absolute;
+    top: 40px;
+    left: 0;
+    z-index: 10;
+    display: block;
+  }
+
+  &-menuContainer.is-hidden {
+    display: none;
+  }
+  &-menuContainer.is-visible {
+    display: block;
+  }
+}

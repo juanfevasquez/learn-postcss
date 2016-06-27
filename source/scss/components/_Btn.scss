@@ -1,0 +1,24 @@
+.Btn {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: none;
+  padding: 0;
+  margin: 0;
+  background-color: transparent;
+
+  &--menuIcon {
+    text-indent: -9999em;
+
+    &.is-visible {
+      @extend %Icons--close;
+    }
+
+    &.is-hidden {
+      @extend %Icons--hamburger;
+    }
+
+  }
+}

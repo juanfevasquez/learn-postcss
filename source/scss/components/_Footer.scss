@@ -1,0 +1,17 @@
+.Footer {
+  position: relative;
+  display: block;
+  padding: 15px;
+  box-sizing: border-box;
+  background-color: rgba(0,0,0,.7);
+  width: 100%;
+  min-height: 80px;
+
+  &-text {
+    display: inline-block;
+    width: 100%;
+    font-size: .75em;
+    text-align: center;
+    color: white;
+  }
+}
