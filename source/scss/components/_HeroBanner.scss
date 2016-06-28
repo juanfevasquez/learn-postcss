@@ -13,9 +13,10 @@
   } 
 
   &-titleContainer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: block;
+    //display: flex;
+    //justify-content: center;
+    //align-items: center;
     min-height: 250px;
 
     @media(min-width: 768px) {
