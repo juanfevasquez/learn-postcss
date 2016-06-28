@@ -7,9 +7,8 @@ var postcss = require('gulp-postcss');
 var cssnano = require('cssnano');
 var cssnext = require('cssnext');
 var autoprefixer = require('autoprefixer');
-var lost = require('lost');
-var sprites = require('postcss-sprites').default;
-var stylelint = require('stylelint');
+var rucksack = require('rucksack-css');
+var scss = require('postcss-scss');
 var fs = require('fs');
 
 gulp.task('sass', function() {
@@ -17,6 +16,9 @@ gulp.task('sass', function() {
   .pipe(maps.init())
   .pipe(sass().on('error', sass.logError))
   .pipe(maps.write())
+  .pipe(postcss([
+      rucksack()
+    ]))
   .pipe(gulp.dest('build/css'))
   .pipe(sync.reload({stream: true}));
 });

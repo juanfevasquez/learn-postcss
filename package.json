@@ -27,7 +27,9 @@
     "gulp-sourcemaps": "^1.6.0",
     "gulp-util": "^3.0.7",
     "lost": "^6.8.1",
+    "postcss-scss": "^0.1.8",
     "postcss-sprites": "^3.1.2",
+    "rucksack-css": "^0.8.6",
     "stylelint": "^6.7.0"
   }
 }
