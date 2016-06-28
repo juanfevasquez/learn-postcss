@@ -10,6 +10,7 @@ var autoprefixer = require('autoprefixer');
 var lost = require('lost');
 var sprites = require('postcss-sprites').default;
 var stylelint = require('stylelint');
+var scss = require('postcss-scss');
 var reporter = require('postcss-reporter');
 var fs = require('fs');
 
@@ -23,7 +24,7 @@ gulp.task('sass', function() {
       clearMessages: true,
       throwError: true
       })
-    ]))
+    ], {syntax: scss}))
   .pipe(sass().on('error', sass.logError))
   .pipe(maps.write())
   .pipe(gulp.dest('build/css'))
